@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Misios_4.ListPage">
+
+    <ContentPage.Content xmlns:local="clr-namespace:Misios_4">
+        <StackLayout Margin="20">
+            <Editor Placeholder="Nume client" Text="{Binding Description}" HeightRequest="100" >
+                <Editor.Behaviors>
+                    <local:ValidationBehaviour />
+                </Editor.Behaviors>
+            </Editor>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Salvare" Clicked="OnSaveButtonClicked" BackgroundColor="#d4af37" />
+                <Button Grid.Column="1" Text="Stergere" Clicked="OnDeleteButtonClicked" BackgroundColor="#d4af37"/>
+                <Button Grid.Column="2" Text="Adauga Nume Medic" Clicked="OnAdaugaobsButtonClicked" BackgroundColor="#d4af37"/>
+                <ListView Grid.Row="1" x:Name="listView" Margin="20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Detail="{Binding Description}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,4 @@
+doctor_id,location,category_id,patient_name,insurance_number,first_visit,id,start_time,end_time
+1,102,1,Kovacs Catalin,xxx88811-oaiodpa,Y,3,2022-01-14 10:00:00,2022-01-14 11:00:00
+1,102,1,Oana,xxx88811-oaiodpa,Y,4,2022-01-14 12:00:00,2022-01-14 13:00:00
+3,102,1,Pop Vasile,xxx88811-oaiodpa,Y,5,2022-01-15 10:00:00,2022-01-15 11:00:00
